@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Blaster v1.0</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/md-icons/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/modal-effects/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="vendor/range/rangeslider.css">
+	<link rel="stylesheet" type="text/css" href="vendor/sweet/sweetalert.css">
+</head>
+<body >
+	<section class="top-level" id="word-main">
+			
+	</section>
+	<section class="top-level" id="word-list">
+		<div class="list-header">
+			<div class="list-header-div">
+				<span class="pacific animated fadeInDown">Word Blaster</span>
+			</div>
+		</div>
+		<main class="list-content mdl-layout__content">
+	        <div class="list-container mdl-layout__tab-panel" id="word-list">
+	        </div>
+      	</main>
+	</section>
+	<section class="top-level" id="word-play" style="display:none">
+		<div class="mdl-layout__container has-scrolling-header">
+			<div class="play-demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100 is-upgraded" data-upgraded=",MaterialLayout">
+	      		<div class="play-demo-ribbon"></div>
+			      <main class="play-demo-main mdl-layout__content">
+			        <div class="play-demo-container mdl-grid">
+			          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+			          <div class="play-demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col" style="min-height: 400px;">
+			           <!--  <div class="play-demo-crumbs mdl-color-text--grey-500">
+			              Press [Spacebar] to Skip
+			            </div> -->
+			            <div class="play-demo-word">
+			            <h3 id="word-name">Word Blaster</h3>
+			            </div>
+			          </div>
+			        </div>
+			      </main>
+		    </div>
+	    </div>
+	    <a href="#" id="btn-list" class="btn-back-list play-float-back mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" style="background-color:#ff5252!important;font-weight: bold;">Back to List</a>
+		<div class="toast play-float-time mdl-shadow--4dp"><span id="time-left">10 secs</span></div>
+	</section>
+	<section id="modals">
+		<div id="modal_group">
+			<div class="md-modal md-effect-1" id="get-set" data-idx="">
+				<div class="md-content" style="min-height:200px">			
+					<h3 class="small-top pacific">Starting Lesson</h3>
+					<div style="text-align:center;margin-top: 40px;">
+						<span id="secs">
+						10s
+						</span>
+					</div>
+					<!-- <div style="">
+						<input type="range" id="slider" />
+					</div> -->
+					<div style="">
+						<a href="#" style="width:200px;margin:0 auto;display:block" class="mdl-button btn-red btn-final">Start Lesson</a>
+					</div>
+				</div>
+			</div>
+			<div class="md-overlay"></div>
+		</div>
+	</section>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="vendor/timer/timer.jquery.js"></script>
+<script type="text/javascript" src="js/material.min.js"></script>
+<script src="vendor/tmpl/js/libs/jquery.tmpl.js"></script>
+<script src="vendor/modal-effects/js/modernizr.custom.js"></script>
+
+<script src="vendor/modal-effects/js/classie.js"></script>
+<script src="vendor/modal-effects/js/modal-effects.js"></script>
+<script src="vendor/modal-effects/js/cssParser.js"></script>
+
+<script src="vendor/range/rangeslider.min.js"></script>
+<script src="vendor/sweet/sweetalert.min.js"></script>
+
+<script type="text/javascript" src="js/words.js"></script>
+<!-- Begin Templates -->
+	<script id='my-word-template' type='text/x-jquery-tmpl'>
+			<section class="section-card section--center mdl-grid mdl-grid--no-spacing mdl-shadow animated fadeIn"  data-card-no='${index}'>
+	            <header style="text-align:center" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-blue mdl-color-text--white">
+	              <i class="zmdi zmdi-font zmdi-hc-fw list-icon"></i>	
+	            </header>
+	            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+	              <div class="mdl-card__supporting-text">
+	                <h4>${item.title}</h4>
+	                <b>Author</b>: ${item.author}<br>
+	                <b>Level</b>: ${item.level}<br>
+	                <b>Duration</b>: ${item.duration}s
+	              </div>
+	              <div class="mdl-card__actions">
+	                <a href="#" class="mdl-button btn-red btn-word">Start Lesson</a>
+	              </div>
+		            <button class="sm-btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1" data-upgraded=",MaterialButton,MaterialRipple">
+		              <i class="zmdi zmdi-info-outline zmdi-hc-fw"></i>
+		            </button> 
+	            </div>
+	        </section>		
+	</script>
+<!-- End Templates -->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

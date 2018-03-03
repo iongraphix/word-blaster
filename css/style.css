@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Brandon';
+    src: url('font/brandon_blk.eot');
+    src: url('font/brandon_blk.eot#iefix') format('embedded-opentype'), url('font/brandon_blk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('font/pacifico.eot');
+  src: url('font/pacifico.woff') format('woff'),
+       url('font/pacifico.ttf') format('truetype')
+}
+
+
+body {
+	background: whitesmoke;;
+}
+.toast {
+    background: white;
+    color: black;
+    text-align: center;
+    width: 105px;
+    height: 36px;
+    border-radius: 3px;
+}
+.toast>span {
+    margin-top: 9px;
+    display: block;
+}
+.pacific {
+	font-family: 'Pacifico';
+}
+/* Play Sectional CSS */
+
+.play-float-back {
+    position: fixed !important;
+    display: block !important;
+    right: 0!important;
+    top: 48px!important;
+    margin-right: 40px!important;
+    margin-bottom: 40px!important;
+    z-index: 900!important;
+}
+.play-float-time {
+	    position: fixed !important;
+    display: block !important;
+    right: 0!important;
+    top: 92px!important;
+    margin-right: 40px!important;
+    margin-bottom: 40px!important;
+    z-index: 900!important;	
+}
+.play-demo-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #4D88FF;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.play-demo-main {
+  margin-top: -35vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.play-demo-header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+.play-demo-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.play-demo-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.play-demo-layout.is-small-screen .play-demo-content {
+  padding: 40px 28px;
+}
+
+.play-demo-content h3 {
+  margin-top: 48px;
+}
+.play-demo-word {
+	text-align: center;
+}
+.play-demo-word h3 {
+	    margin-top: 88px!important;
+	    font-size: 6em;
+}
+
+/* List Sectional CSS */
+.list-content {
+	    width: 100%;
+    margin-top: 60px;
+}
+.list-header{
+	height: 200px;
+	width:100%;
+	background: #4D88FF;
+}
+.list-container {
+	min-height: 400px;
+	margin-bottom: 100px;
+}
+.list-icon {
+	padding-top: 50px!important;
+    font-size: 100px!important;
+}
+.section-card {
+	margin-top: 15px!important;
+}
+.mdl-blue {
+	background-color: #4D88FF;
+}
+.mdl-shadow {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+}
+.btn-red {
+   background-color: #FF4D4D!important;
+    color: white!important;
+}
+.btn-red:hover {
+   background-color:#FF4D4D!important;
+   color: white!important;
+}
+.btn-red:active {
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.29) inset;
+}
+.btn-red:focus {
+     outline: 1px;
+}
+.mdl-card>.sm-btn {
+	position: absolute;
+    z-index: 99;
+    top: 8px;
+    right: 8px;
+}
+.section--center {
+	max-width: 880px;
+}
+.section__play-btn {
+    min-height: 200px;
+}
+.list-header-div {
+	padding-top: 86px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+#secs {
+	font-size: 7pc;
+}

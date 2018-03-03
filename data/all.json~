@@ -1,0 +1,26 @@
+{
+	word_packages: 
+	[
+		{
+			title:"Baisc Four Letter Words",
+			author: "Dominic Damoah",
+			level: "Beginner",
+			interval: 10,
+			word_list: ["DADA","MAMA","CAT","DOG"]
+		},
+		{
+			title:"New Basic Words",
+			author: "Dominic Damoah",
+			level: "Intermediate",
+			duration: 5,
+			word_list: ["Jesus","Satan","Devil","Angel"]
+		},
+		{
+			title:"Advanced Words in a limited Time",
+			author: "Michael Damoah",
+			level: "Advanced",
+			duration: 2,
+			word_list: ["Elementary","Restrictions","Collosal","Humerous"]
+		}
+	]
+}

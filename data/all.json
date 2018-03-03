@@ -1,0 +1,26 @@
+{
+	"word_packages": 
+	[
+		{
+			"title":"Simple Words - Children",
+			"author": "Mr. Damoah",
+			"level": "Beginner",
+			"duration": 10,
+			"word_list": ["BO","BOY","BOBO","BOT", "BUBUU","BOP","BIBI","BOB","BEBEBE","BI","BABA","BU","BABABA","BABAABA"]
+		},
+		{
+			"title":"New Test Words",
+			"author": "Dominic Damoah",
+			"level": "Intermediate",
+			"duration": 5,
+			"word_list": ["Jesus","Satan","Devil","Angel","Heaven","Temple"]
+		},
+		{
+			"title":"Advanced Words in a limited Time",
+			"author": "Michael Damoah",
+			"level": "Advanced",
+			"duration": 1,
+			"word_list": ["Elementary","Restrictions","Sublimal","Humerous","Chancellot"]
+		}
+	]
+}
